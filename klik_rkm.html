@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Webinar</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #40E0D0;
+        }
+
+        .fire-circle {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.5), 0 0 40px rgba(255, 69, 0, 0.5), 0 0 60px rgba(255, 69, 0, 0.5);
+            animation: fire-animation 1s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .fire-circle:hover {
+            background-color: green;
+        }
+
+        .fire-circle img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        @keyframes fire-animation {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 69, 0, 0.5), 0 0 40px rgba(255, 69, 0, 0.5), 0 0 60px rgba(255, 69, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255, 140, 0, 0.7), 0 0 60px rgba(255, 140, 0, 0.7), 0 0 90px rgba(255, 140, 0, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 69, 0, 0.5), 0 0 40px rgba(255, 69, 0, 0.5), 0 0 60px rgba(255, 69, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/login.html" target="_blank" style="text-decoration: none;">
+        <div class="fire-circle">
+            <svg width="180" height="180" viewBox="0 0 180 180">
+                <defs>
+                    <path id="curveTop" d="M 20,90 A 70,70 0 0,1 160,90" fill="transparent"/>
+                    <path id="curveBottom" d="M 20,90 A 70,70 0 0,0 160,90" fill="transparent"/>
+                </defs>
+                <text font-size="14" fill="white" font-weight="bold">
+                    <textPath href="#curveTop" startOffset="50%" text-anchor="middle" font-size="18">RKM, RKT, RKAM</textPath>
+                </text>
+                <text font-size="14" fill="white" font-weight="bold">
+                    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle" font-size="18">M T s N &nbsp; 2 &nbsp; K E B U M E N</textPath>
+                </text>
+            </svg>
+            <img src="https://www.geocities.ws/mutadi/klik.png" alt="Webinar Image">
+        </div>
+    </a>
+</body>
+</html>
