@@ -12,6 +12,51 @@
             justify-content: center;
             align-items: center;
             background-color: #40E0D0;
+}
+        .dropdown {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+        }
+        .dropbtn {
+            background-color: orange;
+            color: white;
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn::before {
+            content: "\2630"; /* Unicode for hamburger menu icon */
+            font-size: 24px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+}
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+
+
         }
 
         .fire-circle {
@@ -53,6 +98,15 @@
         }
     </style>
 </head>
+<div class="dropdown">
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+                <a href="https://teddymutadi.github.io/myportfolio/tpm.pdf" target="_blank">Tim Pengembang Madrasah</a>
+ 		<a href="https://teddymutadi.github.io/myportfolio/jadwalkerja.pdf" target="_blank">Target Kerja</a>
+                <a href="https://www.canva.com/design/DAGlfSGofDw/cnjzENFS7KQ_snejF5tqgg/edit?utm_content=DAGlfSGofDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Kerangka Kerja</a>
+                <a href="https://geocities.ws/mrteddy/presentasirkm.pdf" target="_blank">Presentasi RKM</a>
+ 		</div>
+        </div>
 <body>
     <a href="https://teddymutadi.github.io/myportfolio/login.html" target="_blank" style="text-decoration: none;">
         <div class="fire-circle">
